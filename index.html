@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aframe/0.7.1/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
+    <script src="https://codechangers.com/physics.js"></script>
+    <title>VR-site</title>
+    <script src="/script.js" defer></script>
+  </head>
+
+  <body>
+    <a-scene id="Sceeeeeeeeeene">
+      <a-entity environment="preset:japan;"></a-entity>
+      <a-camera position="-20 3 0" rotation="0 -90 0" id="Cameeeeeeeera"></a-camera>
+      <a-entity class="square">
+        <a-box
+          dynamic-body
+          position="2.5 3 17"
+          height="4"
+          width="4"
+          depth="4"
+          rotation="0 0 0"
+          color="#ffb703"
+        ></a-box>
+        <a-box
+          static-body
+          position="2.5 -0.1 0"
+          height="0.1"
+          width="100"
+          depth="100"
+          rotation="0 0 0"
+          color="#cdb4db"
+        ></a-box>
+      </a-entity>
+      <a-videosphere
+        src="https://cdn.glitch.com/3f95a179-52df-437a-8866-43188d2fcd4d%2F360_VR%20Master%20Series%20_%20Free%20Download%20_%20Crystal%20Shower%20Falls.mp4?v=1633350887434"
+        radius="2.5"
+        position="2.5 4 -17"
+      ></a-videosphere>
+    </a-scene>
+  </body>
+</html>
